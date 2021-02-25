@@ -100,7 +100,7 @@ data sorting
 SELECT * FROM tablename ORDER BY fieldname;
 
 -- descending
-SELECT * FROM tablename ORDER BY fieldname;
+SELECT * FROM tablename ORDER BY fieldname DESC;
 ```
 
 #### WHERE
