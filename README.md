@@ -90,3 +90,39 @@ CREATE TABLE celebs (
 -   `UNIQUE` : 테이블에서 유일한 값, 테이블에 여러개 존재 가능
 -   `NOT NULL` : 꼭 있어야하는 값
 -   `DEFAULT` : 기본 값
+
+#### ORDER BY
+
+data sorting
+
+```sql
+-- ascending
+SELECT * FROM tablename ORDER BY fieldname;
+
+-- descending
+SELECT * FROM tablename ORDER BY fieldname;
+```
+
+#### WHERE
+
+data with condition
+
+```sql
+-- age 값이 10인 검색
+SELECT * FROM tablename WHERE age = '10';
+
+-- age 값이 10 이상인 데이터 검색
+SELECT * FROM tablename WHERE age > '10';
+
+-- age 값이 10 이상이며 height 값이 170 이상인 데이터 검색
+SELECT * FROM tablename WHERE age > '10' and height > '170';
+
+-- name 값이 A로 시작하는 데이터 검색
+SELECT * FROM tablename WHERE name LIKE 'A%';
+
+-- name 값이 A로 끝나는 데이터 검색
+SELECT * FROM tablename WHERE name LIKE '%A';
+
+-- name 값에 A가 포함되는 데이터 검색
+SELECT * FROM tablename WHERE name LIKE '%A%';
+```
